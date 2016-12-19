@@ -3,7 +3,7 @@
 
 Name:           python-%{srcname}
 Version:        0.1.15
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        %{sum}
 BuildArch:      noarch
 
@@ -63,6 +63,9 @@ Sphinx extension that automatically documents argparse commands and options
 %{python3_sitelib}/*
 
 %changelog
+* Mon Dec 19 2016 Miro Hrončok <mhroncok@redhat.com> - 0.1.15-3
+- Rebuild for Python 3.6
+
 * Tue Feb 02 2016 Brian C. Lane <bcl@redhat.com> 0.1.15-2
 - Fix description typo
 - Drop %check section, upstream uses tox for testing.
