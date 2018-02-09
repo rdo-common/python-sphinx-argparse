@@ -3,7 +3,7 @@
 
 Name:           python-%{srcname}
 Version:        0.1.15
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        %{sum}
 BuildArch:      noarch
 
@@ -18,8 +18,8 @@ BuildRequires:  python3-devel python3-setuptools
 Sphinx extension that automatically documents argparse commands and options
 
 %package -n python2-%{srcname}
-Requires:       python-sphinx
-BuildRequires:  python-sphinx
+Requires:       python2-sphinx
+BuildRequires:  python2-sphinx
 Summary:        %{sum}
 %{?python_provide:%python_provide python2-%{srcname}}
 
@@ -63,6 +63,10 @@ Sphinx extension that automatically documents argparse commands and options
 %{python3_sitelib}/*
 
 %changelog
+* Fri Feb 09 2018 Iryna Shcherbina <ishcherb@redhat.com> - 0.1.15-7
+- Update Python 2 dependency declarations to new packaging standards
+  (See https://fedoraproject.org/wiki/FinalizingFedoraSwitchtoPython3)
+
 * Fri Feb 09 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.1.15-6
 - Escape macros in %%changelog
 
