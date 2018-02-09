@@ -3,7 +3,7 @@
 
 Name:           python-%{srcname}
 Version:        0.1.15
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        %{sum}
 BuildArch:      noarch
 
@@ -63,6 +63,9 @@ Sphinx extension that automatically documents argparse commands and options
 %{python3_sitelib}/*
 
 %changelog
+* Fri Feb 09 2018 Igor Gnatenko <ignatenkobrain@fedoraproject.org> - 0.1.15-6
+- Escape macros in %%changelog
+
 * Thu Jul 27 2017 Fedora Release Engineering <releng@fedoraproject.org> - 0.1.15-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
 
@@ -74,7 +77,7 @@ Sphinx extension that automatically documents argparse commands and options
 
 * Tue Feb 02 2016 Brian C. Lane <bcl@redhat.com> 0.1.15-2
 - Fix description typo
-- Drop %check section, upstream uses tox for testing.
+- Drop %%check section, upstream uses tox for testing.
 
 * Mon Feb 01 2016 Brian C. Lane <bcl@redhat.com> 0.1.15-1
 - Initial creation
