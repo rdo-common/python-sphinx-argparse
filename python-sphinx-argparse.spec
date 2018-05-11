@@ -2,8 +2,8 @@
 %global sum Sphinx extension that automatically documents argparse commands and options
 
 Name:           python-%{srcname}
-Version:        0.1.15
-Release:        7%{?dist}
+Version:        0.2.2
+Release:        1%{?dist}
 Summary:        %{sum}
 BuildArch:      noarch
 
@@ -63,6 +63,9 @@ Sphinx extension that automatically documents argparse commands and options
 %{python3_sitelib}/*
 
 %changelog
+* Fri May 11 2018 Brian C. Lane <bcl@redhat.com> - 0.2.2-1
+- Update to new upstream release
+
 * Fri Feb 09 2018 Iryna Shcherbina <ishcherb@redhat.com> - 0.1.15-7
 - Update Python 2 dependency declarations to new packaging standards
   (See https://fedoraproject.org/wiki/FinalizingFedoraSwitchtoPython3)
