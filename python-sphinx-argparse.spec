@@ -3,7 +3,7 @@
 
 Name:           python-%{srcname}
 Version:        0.2.2
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        %{sum}
 BuildArch:      noarch
 
@@ -63,6 +63,9 @@ Sphinx extension that automatically documents argparse commands and options
 %{python3_sitelib}/*
 
 %changelog
+* Sat Jul 14 2018 Fedora Release Engineering <releng@fedoraproject.org> - 0.2.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
+
 * Tue Jun 19 2018 Miro Hrončok <mhroncok@redhat.com> - 0.2.2-2
 - Rebuilt for Python 3.7
 
